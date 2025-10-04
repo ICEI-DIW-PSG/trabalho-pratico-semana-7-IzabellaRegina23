@@ -1,134 +1,158 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dicas de viagem Izabella</title>
-    <link rel="stylesheet" href="css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
-    <nav class="navbar col-11 m-auto navbar-light bg-primary navbar-expand-lg">
+<body class="bg-primary bg-opacity-10">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-
-
-            <!-- Botão Toggle para Mobile -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav justify-content-between w-100">
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active text-black" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Destinos Nacionais</a>
+                        <a class="nav-link text-black" href="#">Destinos Internacionais</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Destinos Internacionais</a>
+                        <a class="nav-link text-black" href="#">Cupom Desconto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cupom Desconto</a>
+                        <a class="nav-link text-black" href="#">Dicas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Dicas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html">Login</a>
+                        <a class="nav-link text-black" href="login.html">Login</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <nav id="identidade">
-        <h2>Dicas de Viagem Izabella</h2>
-        <img src="images/logo.png" alt="logo do site Dica de Viagem">
-    </nav>
-
-    <article id="lateral">
-        <nav class="nav flex-column col-1 m-auto mt-3  p-10 me-3">
-            <a class="nav-link active fs-3 rounded-3 border border-5 border-primary text-center" aria-current="page"
-                href="#">Praias</a>
-            <br>
-            <a class="nav-link fs-3 rounded-3 border border-5 border-primary text-center" href="#">Neve</a>
-            <br>
-            <a class="nav-link fs-3 rounded-3 border border-5 border-primary text-center" href="#">Parques de
-                Diversão</a>
-            <br>
-            <a class="nav-link fs-3 rounded-3 border border-5 border-primary text-center" href="#">Cidades
-                Históricas</a>
-            <br>
-            <a class="nav-link fs-3 rounded-3 border border-5 border-primary text-center" href="#">Quiz do Viajante</a>
-        </nav>
-    </article>
-
-    <main id="postagens">
-        <div class="container mt-0 w-50">
-            <h2>Bem-vindo ao Dicas de Viagem Izabella!</h2>
-            <p class="lh-lg">Seu guia definitivo para explorar o mundo com dicas incríveis, destinos imperdíveis e
-                ofertas exclusivas.
-                Prepare-se para embarcar em aventuras inesquecíveis!</p>
-
-            <h3>Destinos Nacionais</h3>
-            <p class="lh-lg">Descubra as maravilhas do Brasil, desde as praias paradisíacas do Nordeste até as paisagens
-                deslumbrantes
-                da Amazônia. Encontre dicas de viagem, roteiros personalizados e ofertas especiais para tornar sua
-                viagem inesquecível.</p>
-
-            <h3>Destinos Internacionais</h3>
-            <p class="lh-lg">Explore o mundo com nossas recomendações de destinos internacionais. Desde as cidades
-                vibrantes da Europa
-                até as praias exóticas do Sudeste Asiático, temos tudo o que você precisa para planejar sua próxima
-                aventura global.</p>
-
-            <h3>Cupons de Desconto</h3>
-            <p class="lh-lg">Aproveite nossas ofertas exclusivas e cupons de desconto para economizar em passagens
-                aéreas, hospedagem
-                e pacotes turísticos. Viajar nunca foi tão acessível!</p>
-
-            <h3>Dicas de Viagem</h3>
-            <p class="lh-lg">Encontre conselhos práticos sobre planejamento de viagens, segurança, bagagem e muito mais.
-                Nossas dicas
-                são elaboradas por especialistas para garantir que sua experiência seja tranquila e agradável.</p>
-        </div>
-    </main>
-
-    <aside class="cards col-2 m-auto mt-3 p-10 me-2">
-        <div class="card" style="width: 14rem; columns: -11px; position: absolute; top: 300px; right: 80px;">
-            <img src="/images/rio.jpeg" class="card-img-fluid" alt="rio de janeiro">
-            <div class="card-body">
-                <p class="card-text text-center">Rio de Janeiro</p>
+    <header id="identidade">
+        <div id="carouselExampleCaptions" class="carousel slide w-50 mx-auto mt-5 mb-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
-        </div>
-        <div class="card img-fluid" style="width: 14rem; columns: -11px; position: absolute; top: 500px; right: 80px;">
-            <img src="/images/paris.webp" class="card-img-fluid" alt="paris">
-            <div class="card-body">
-                <p class="card-text text-center">Paris</p>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/imagem_carrossel_1.jpg" class="d-block w-100 h-100" alt="bonito">
+                    <div class="carousel-caption d-none d-md-block bg-black bg-opacity-75 p-3 rounded">
+                        <h5 class="text-white fw-bold bg-">Bonito(MS)</h5>
+                        <p>Mergulhe nas águas cristalinas e descubra um paraíso subaquático!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/imagem_carrossel_2.jpg" class="d-block w-100 h-100" alt="itacare">
+                    <div class="carousel-caption d-none d-md-block bg-black bg-opacity-75 p-3 rounded">
+                        <h5 class="text-white fw-bold bg-">Itacaré(BA)</h5>
+                        <p>Entre o verde da mata e o azul do mar, viva o melhor da Bahia!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/imagem_carrossel_3.jpg" class="d-block w-100 h-100" alt="ny">
+                    <div class="carousel-caption d-none d-md-block bg-black bg-opacity-75 p-3 rounded">
+                        <h5 class="text-white fw-bold bg-">Nova York(EUA)</h5>
+                        <p>A cidade que nunca dorme — onde cada rua conta uma história!</p>
+                    </div>
+                </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="card img-fluid" style="width: 14rem; columns: -11px; position: absolute; top: 710px; right: 80px;">
-            <img src="/images/maceio.jpeg" class="card-img-fluid" alt="maceio">
-            <div class="card-body">
-                <p class="card-text text-center">Maceió</p>
-            </div>
-        </div>
-    </aside>
+    </header>
 
-    <footer id="rodape">
+    <div class="container-fluid">
+        <div class="row">
+            <aside id="lateral" class="col-lg-2 col-md-3">
+                <nav class="nav flex-column gap-5 w-75 mx-auto fs-4 text-center">
+                    <a class="nav-link border rounded border-primary text-black bg-primary bg-opacity-75" href="#">Praias</a>
+                    <a class="nav-link border rounded border-primary text-black bg-primary bg-opacity-75" href="#">Neve</a>
+                    <a class="nav-link border rounded border-primary text-black bg-primary bg-opacity-75" href="#">Parques de Diversão</a>
+                    <a class="nav-link border rounded border-primary text-black bg-primary bg-opacity-75" href="#">Cidades Históricas</a>
+                    <a class="nav-link border rounded border-primary text-black bg-primary bg-opacity-75" href="#">Quiz do Viajante</a>
+                </nav>
+            </aside>
+
+            <main id="postagens" class="col-lg-7 col-md-6">
+                <h2 class="text-center fw-bold">Bem-vindo ao Dicas de Viagem Izabella!</h2>
+                <p class="lh-lg">Seu guia definitivo para explorar o mundo com dicas incríveis, destinos imperdíveis e
+                    ofertas exclusivas. Prepare-se para embarcar em aventuras inesquecíveis!</p>
+
+                <h3 class="text-center">Destinos Nacionais</h3>
+                <p class="lh-lg">Descubra as maravilhas do Brasil, desde as praias paradisíacas do Nordeste até as
+                    paisagens deslumbrantes da Amazônia. Encontre dicas de viagem, roteiros personalizados e ofertas
+                    especiais para tornar sua viagem inesquecível.</p>
+
+                <h3 class="text-center">Destinos Internacionais</h3>
+                <p class="lh-lg">Explore o mundo com nossas recomendações de destinos internacionais. Desde as cidades
+                    vibrantes da Europa até as praias exóticas do Sudeste Asiático, temos tudo o que você precisa para
+                    planejar sua próxima aventura global.</p>
+
+                <h3 class="text-center">Cupons de Desconto</h3>
+                <p class="lh-lg">Aproveite nossas ofertas exclusivas e cupons de desconto para economizar em passagens
+                    aéreas, hospedagem e pacotes turísticos. Viajar nunca foi tão acessível!</p>
+
+                <h3 class="text-center">Dicas de Viagem</h3>
+                <p class="lh-lg">Encontre conselhos práticos sobre planejamento de viagens, segurança, bagagem e muito
+                    mais. Nossas dicas são elaboradas por especialistas para garantir que sua experiência seja tranquila
+                    e agradável.</p>
+            </main>
+
+            <aside class="col-lg-3 col-md-3" id="cards-lateral">
+                <h2 class=" text-center ">Mais procurados</h2>
+                <div class="card w-50  mx-auto mb-3">
+                    <img src="img/rio.jpeg" class="card-img-top" alt="rio de janeiro">
+                    <div class="card-body">
+                        <p class="card-text text-center fw-bold">Rio de Janeiro</p>
+                    </div>
+                </div>
+                <div class="card w-50 mx-auto mb-3">
+                    <img src="img/paris.webp" class="card-img-top" alt="paris">
+                    <div class="card-body">
+                        <p class="card-text text-center fw-bold">Paris</p>
+                    </div>
+                </div>
+                <div class="card w-50 mx-auto mb-3">
+                    <img src="img/maceio.jpeg" class="card-img-top" alt="maceio">
+                    <div class="card-body">
+                        <p class="card-text text-center fw-bold">Maceió</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer id= rodape class="text-center p-3 bg-primary bg-opacity-75 text-black mt-5">
         <p>Copyright &copy; 2025 Dica de Viagem - Desenvolvido por Izabella</p>
     </footer>
 
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
     <script src="app.js"></script>
+</body>
 
 </html>
