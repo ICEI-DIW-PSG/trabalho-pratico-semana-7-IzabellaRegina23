@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dicas de viagem Izabella</title>
+    <title>Dicas de viagens Izabella</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
@@ -13,25 +13,31 @@
 <body class="bg-primary bg-opacity-10">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo_site.png" alt="Dicas de Viagens Izabella" width="120" height="auto">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
+            <div id="menu" class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto justify-content-center gap-5">
                     <li class="nav-item">
-                        <a class="nav-link active text-black" href="#">Home</a>
+                        <a class="nav-link active text-black fs-4" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-black" href="#">Destinos Internacionais</a>
+                        <a class="nav-link text-black fs-4" href="#">Destinos Nacionais</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-black" href="#">Cupom Desconto</a>
+                        <a class="nav-link text-black fs-4" href="#">Destinos Internacionais</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-black" href="#">Dicas</a>
+                        <a class="nav-link text-black fs-4" href="#">Cupom Desconto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-black" href="login.html">Login</a>
+                        <a class="nav-link text-black fs-4" href="#">Dicas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black fs-4" href="login.html">Login</a>
                     </li>
                 </ul>
             </div>
@@ -88,16 +94,21 @@
         <div class="row">
             <aside id="lateral" class="col-lg-2 col-md-3">
                 <nav class="nav flex-column gap-5 w-75 mx-auto fs-4 text-center">
-                    <a class="nav-link border rounded border-primary text-black bg-primary bg-opacity-75" href="#">Praias</a>
-                    <a class="nav-link border rounded border-primary text-black bg-primary bg-opacity-75" href="#">Neve</a>
-                    <a class="nav-link border rounded border-primary text-black bg-primary bg-opacity-75" href="#">Parques de Diversão</a>
-                    <a class="nav-link border rounded border-primary text-black bg-primary bg-opacity-75" href="#">Cidades Históricas</a>
-                    <a class="nav-link border rounded border-primary text-black bg-primary bg-opacity-75" href="#">Quiz do Viajante</a>
+                    <a class="nav-link border rounded border-black text-black bg-primary bg-opacity-75"
+                        href="#">Praias</a>
+                    <a class="nav-link border rounded border-black text-black bg-primary bg-opacity-75"
+                        href="#">Neve</a>
+                    <a class="nav-link border rounded border-black text-black bg-primary bg-opacity-75" href="#">Parques
+                        de Diversão</a>
+                    <a class="nav-link border rounded border-black text-black bg-primary bg-opacity-75" href="#">Cidades
+                        Históricas</a>
+                    <a class="nav-link border rounded border-black text-black bg-primary bg-opacity-75" href="#">Quiz
+                        do Viajante</a>
                 </nav>
             </aside>
 
             <main id="postagens" class="col-lg-7 col-md-6">
-                <h2 class="text-center fw-bold">Bem-vindo ao Dicas de Viagem Izabella!</h2>
+                <h2 class="text-center fw-bold">Bem-vindo ao Dicas de Viagens Izabella!</h2>
                 <p class="lh-lg">Seu guia definitivo para explorar o mundo com dicas incríveis, destinos imperdíveis e
                     ofertas exclusivas. Prepare-se para embarcar em aventuras inesquecíveis!</p>
 
@@ -123,29 +134,15 @@
 
             <aside class="col-lg-3 col-md-3" id="cards-lateral">
                 <h2 class=" text-center ">Mais procurados</h2>
-                <div class="card w-50  mx-auto mb-3">
-                    <img src="img/rio.jpeg" class="card-img-top" alt="rio de janeiro">
-                    <div class="card-body">
-                        <p class="card-text text-center fw-bold">Rio de Janeiro</p>
-                    </div>
-                </div>
-                <div class="card w-50 mx-auto mb-3">
-                    <img src="img/paris.webp" class="card-img-top" alt="paris">
-                    <div class="card-body">
-                        <p class="card-text text-center fw-bold">Paris</p>
-                    </div>
-                </div>
-                <div class="card w-50 mx-auto mb-3">
-                    <img src="img/maceio.jpeg" class="card-img-top" alt="maceio">
-                    <div class="card-body">
-                        <p class="card-text text-center fw-bold">Maceió</p>
-                    </div>
+                <div id= "cards-lateral" class="cards">
+                   
+
                 </div>
             </aside>
         </div>
     </div>
 
-    <footer id= rodape class="text-center p-3 bg-primary bg-opacity-75 text-black mt-5">
+    <footer id=rodape class="text-center p-3 bg-primary bg-opacity-75 text-black mt-5">
         <p>Copyright &copy; 2025 Dica de Viagem - Desenvolvido por Izabella</p>
     </footer>
 
