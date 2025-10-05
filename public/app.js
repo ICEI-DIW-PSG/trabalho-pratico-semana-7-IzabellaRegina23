@@ -31,9 +31,9 @@ const dados = [
 
 
 const cardsContainer = document.getElementById('cards-lateral');
-let html ='';
+let html = '';
 for (let i = 0; i < dados.length; i++) {
-    html+=`
+  html += `
     <a href="detalhes.html?id=${dados[i].id}" class="text-decoration-none">
         <div class="card w-50  mx-auto mb-3">
             <img src="${dados[i].imagem}" class="card-img-top" alt="${dados[i].titulo}">
@@ -42,7 +42,33 @@ for (let i = 0; i < dados.length; i++) {
             </div>
         </div>
     </a>
-    ` 
+    `
 }
+
+if (cardsContainer)
 cardsContainer.innerHTML = html;
 
+
+
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get('id');
+
+
+const tituloElement = document.getElementById('cidade');
+const tituloText = tituloElement.textContent
+
+const descricaoElement = document.getElementById('descricao');
+const descricaoText = descricaoElement.textContent
+
+const imagemElement = document.getElementById('fotocidade');
+const imagemSrc = imagemElement.getAttribute('src');
+
+for (let i = 0; i < dados.length; i++) {
+  if (dados[i].id == id) {
+    tituloElement.textContent = dados[i].titulo;
+    descricaoElement.textContent = dados[i].conteudo;
+    imagemElement.setAttribute('src', dados[i].imagem);
+    imagemElement.setAttribute('alt', dados[i].titulo);
+    break;
+  }
+}
